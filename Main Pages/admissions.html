@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="../index.html" title="This leads to the Home page.">Back</a>
+    <br />
+    <h1>Admission Form</h1>
+    <form class="form" action="submit_admission.php" method="post">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
+
+      <label for="dob">Date of Adm.:</label>
+      <input type="date" id="doa" name="doa" required /><br /><br />
+
+      <label for="course">Course:</label>
+      <select id="course" name="course">
+        <option value="arts">Arts</option>
+        <option value="commerce">Commerce</option>
+        <option value="engineering">Engineering</option>
+        <option value="law">Law</option>
+        <option value="medicine">Medicine</option>
+        <option value="science">Science</option></select
+      ><br /><br />
+
+      <label for="message">Introductory Essay:</label><br />
+      <textarea id="message" name="message" rows="4" cols="50"></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" id="submit-btn" />
+    </form>
+  </body>
+</html>
